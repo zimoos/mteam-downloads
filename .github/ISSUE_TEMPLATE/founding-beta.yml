@@ -1,0 +1,63 @@
+name: MTEAM Founding Beta application
+description: Apply for one of the first 20 macOS Apple Silicon seats.
+title: "[Founding Beta] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        MTEAM is for developers who already use Codex or Claude Code and regularly manage several long-running Agent tasks. Free access is used to prove value before any purchase. Founding Beta is US$19 once for 90 days of Core, with no automatic renewal or overage charges.
+  - type: checkboxes
+    id: fit
+    attributes:
+      label: Basic fit
+      options:
+        - label: I use a Mac with Apple Silicon.
+          required: true
+        - label: I already use Codex, Claude Code, or both.
+          required: true
+        - label: I can test MTEAM with a real long-running task rather than a demo prompt.
+          required: true
+  - type: dropdown
+    id: workload
+    attributes:
+      label: Weekly long-running Agent tasks
+      options:
+        - 2-4
+        - 5-10
+        - More than 10
+    validations:
+      required: true
+  - type: checkboxes
+    id: agents
+    attributes:
+      label: Agents used today
+      options:
+        - label: Codex
+        - label: Claude Code
+        - label: Other local or cloud Agent
+    validations:
+      required: true
+  - type: textarea
+    id: task
+    attributes:
+      label: First real task
+      description: Describe the concrete task you will use to evaluate MTEAM and what a successful result looks like.
+      placeholder: I need to...
+    validations:
+      required: true
+  - type: textarea
+    id: pain
+    attributes:
+      label: Current coordination cost
+      description: "Where do you lose the most time today: repeating context, checking progress, correcting drift, or reviewing delivery?"
+    validations:
+      required: true
+  - type: checkboxes
+    id: feedback
+    attributes:
+      label: Evaluation agreement
+      options:
+        - label: I can provide brief product feedback after the first task and again during the first week.
+          required: true
+        - label: I understand this is a limited beta and does not include custom development or managed Agent operations.
+          required: true
