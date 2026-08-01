@@ -6,6 +6,8 @@ body:
     attributes:
       value: |
         MTEAM is for developers who already use Codex or Claude Code and regularly manage several long-running Agent tasks. Free access is used to prove value before any purchase. Founding Beta is US$19 once for 90 days of Core, with no automatic renewal or overage charges.
+
+        This application is a public GitHub issue. Do not include credentials, private code, customer data, personal contact details, or other confidential information. We will contact selected applicants through their GitHub account.
   - type: checkboxes
     id: fit
     attributes:
