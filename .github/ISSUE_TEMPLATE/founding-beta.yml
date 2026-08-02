@@ -1,6 +1,8 @@
 name: MTEAM Founding Beta application
 description: Apply for one of the first 20 macOS Apple Silicon seats.
 title: "[Founding Beta] "
+labels:
+  - founding-beta
 body:
   - type: markdown
     attributes:
@@ -59,7 +61,7 @@ body:
     attributes:
       label: Evaluation agreement
       options:
-        - label: I can provide brief product feedback after the first task and again during the first week.
+        - label: I can provide brief product feedback after the first task and on days 7, 14, and 28.
           required: true
         - label: I understand this is a limited beta and does not include custom development or managed Agent operations.
           required: true
